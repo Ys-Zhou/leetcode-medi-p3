@@ -1,4 +1,4 @@
-# Runtime: 628 ms, faster than 11.17% of Python3 online submissions for Minimum Height Trees.
+# Runtime: 628 ms, faster than 11.17% of Python3 online submissions
 
 
 class Solution:

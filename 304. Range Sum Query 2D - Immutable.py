@@ -1,4 +1,4 @@
-# Runtime: 124 ms, faster than 20.62% of Python3 online submissions for Range Sum Query 2D - Immutable.
+# Runtime: 124 ms, faster than 20.62% of Python3 online submissions
 
 
 class NumMatrix:

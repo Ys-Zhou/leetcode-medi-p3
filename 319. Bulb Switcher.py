@@ -1,4 +1,4 @@
-# Runtime: 40 ms, faster than 45.05% of Python3 online submissions for Bulb Switcher.
+# Runtime: 40 ms, faster than 45.05% of Python3 online submissions
 
 
 class Solution:

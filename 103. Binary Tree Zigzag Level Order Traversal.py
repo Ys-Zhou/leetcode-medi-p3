@@ -1,4 +1,4 @@
-# Runtime: 44 ms, faster than 38.32% of Python3 online submissions for Binary Tree Zigzag Level Order Traversal.
+# Runtime: 44 ms, faster than 38.32% of Python3 online submissions
 
 # Definition for a binary tree node.
 # class TreeNode:

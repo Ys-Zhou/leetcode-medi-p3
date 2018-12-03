@@ -1,4 +1,4 @@
-# Runtime: 328 ms, faster than 22.65% of Python3 online submissions for Range Sum Query - Mutable.
+# Runtime: 328 ms, faster than 22.65% of Python3 online submissions
 
 
 class Node:

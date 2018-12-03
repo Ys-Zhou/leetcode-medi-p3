@@ -1,4 +1,4 @@
-# Runtime: 240 ms, faster than 31.66% of Python3 online submissions for Construct Binary Tree from Inorder and Postorder Traversal.
+# Runtime: 240 ms, faster than 31.66% of Python3 online submissions
 
 # Definition for a binary tree node.
 # class TreeNode:

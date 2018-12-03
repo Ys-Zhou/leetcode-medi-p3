@@ -1,4 +1,4 @@
-# Runtime: 136 ms, faster than 26.64% of Python3 online submissions for Maximal Square.
+# Runtime: 136 ms, faster than 26.64% of Python3 online submissions
 
 
 class Solution:

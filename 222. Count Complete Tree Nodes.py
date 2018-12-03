@@ -1,4 +1,4 @@
-# Runtime: 148 ms, faster than 33.46% of Python3 online submissions for Count Complete Tree Nodes.
+# Runtime: 148 ms, faster than 33.46% of Python3 online submissions
 
 # Definition for a binary tree node.
 # class TreeNode:

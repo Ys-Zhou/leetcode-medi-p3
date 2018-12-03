@@ -1,4 +1,4 @@
-# Runtime: 1168 ms, faster than 2.83% of Python3 online submissions for Course Schedule.
+# Runtime: 1168 ms, faster than 2.83% of Python3 online submissions
 
 
 class Solution:

@@ -1,4 +1,4 @@
-# Runtime: 112 ms, faster than 95.90% of Python3 online submissions for Implement Trie (Prefix Tree).
+# Runtime: 112 ms, faster than 95.90% of Python3 online submissions
 
 
 class Trie:

@@ -1,4 +1,4 @@
-# Runtime: 64 ms, faster than 16.34% of Python3 online submissions for Binary Tree Level Order Traversal.
+# Runtime: 64 ms, faster than 16.34% of Python3 online submissions
 
 # Definition for a binary tree node.
 # class TreeNode:

@@ -1,4 +1,4 @@
-# Runtime: 420 ms, faster than 16.12% of Python3 online submissions for Bitwise AND of Numbers Range.
+# Runtime: 420 ms, faster than 16.12% of Python3 online submissions
 
 
 class Solution:
