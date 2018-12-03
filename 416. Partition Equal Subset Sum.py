@@ -1,3 +1,6 @@
+# Runtime: 52 ms, faster than 81.40% of Python3 online submissions
+
+
 class Solution:
     def canPartition(self, nums):
         """
@@ -6,16 +9,18 @@ class Solution:
         """
         nums = sorted(nums, reverse=True)
         sum_ = sum(nums)
-        if len(nums) == 1 or sum_ % 2 == 1:
-            return False
         half = sum_ / 2
-        psb = [0]
-        for num in nums:
-            next_psb = []
-            sum_ -= num
-            while (psb):
-                p = psb.pop()
 
+        if sum_ % 2 == 1:
+            return False
 
-s = Solution()
-s.canPartition([1, 5, 11, 5])
+        def select(total, rest, idx):
+            if total == half:
+                return True
+            if total > half or total + rest < half:
+                return False
+            if idx == len(nums):
+                return False
+            return select(total + nums[idx], rest - nums[idx], idx + 1) or select(total, rest - nums[idx], idx + 1)
+
+        return select(0, sum_, 0)
