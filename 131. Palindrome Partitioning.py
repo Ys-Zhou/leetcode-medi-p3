@@ -1,16 +1,15 @@
-# Runtime: 136 ms, faster than 20.19% of Python online submissions
+# Runtime: 160 ms, faster than 18.76% of Python3 online submissions
 
 
-class Solution(object):
+class Solution:
     def partition(self, s):
         """
         :type s: str
         :rtype: List[List[str]]
         """
-        le = len(s)
-        dp = [[] for _ in range(le + 1)]
+        dp = [[] for _ in range(len(s) + 1)]
         dp[0].append([])
-        for end in range(le):
+        for end in range(len(s)):
             for start in range(end + 1):
                 is_pal = True
                 for p in range((end - start + 1) // 2):
