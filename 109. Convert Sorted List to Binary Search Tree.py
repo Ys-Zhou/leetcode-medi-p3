@@ -24,7 +24,7 @@ class Solution:
             return None
 
         array = list()
-        while (head):
+        while head:
             array.append(head.val)
             head = head.next
 

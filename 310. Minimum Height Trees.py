@@ -15,7 +15,7 @@ class Solution:
 
         nodes = set([x for x in range(n)])
 
-        while (len(nodes) > 2):
+        while len(nodes) > 2:
             marked = set()
             for node in nodes:
                 if len(mat[node]) == 1:

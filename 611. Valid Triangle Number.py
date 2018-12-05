@@ -6,12 +6,11 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        length = len(nums)
-        if length < 3:
+        if len(nums) < 3:
             return 0
         count = 0
         nums.sort()
-        for c in range(length - 1, 1, -1):
+        for c in range(len(nums) - 1, 1, -1):
             a = 0
             b = c - 1
             while a < b:
