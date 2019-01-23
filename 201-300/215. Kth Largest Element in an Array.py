@@ -1,3 +1,6 @@
+# Runtime: 1492 ms, faster than 14.63% of Python3 online submissions
+
+
 class Solution:
     def findKthLargest(self, nums, k):
         """

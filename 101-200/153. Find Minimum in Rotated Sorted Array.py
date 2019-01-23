@@ -1,3 +1,6 @@
+# Runtime: 48 ms, faster than 33.10% of Python3 online submissions
+
+
 class Solution:
     def findMin(self, nums):
         """
