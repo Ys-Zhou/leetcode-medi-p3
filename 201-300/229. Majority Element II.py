@@ -35,7 +35,6 @@ class Solution:
                 continue
             if num == num_2:
                 votes_2 += 1
-                continue
         res = []
         if votes_1 > len(nums) // 3:
             res.append(num_1)
