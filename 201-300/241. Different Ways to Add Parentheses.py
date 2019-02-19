@@ -1,4 +1,5 @@
 # Runtime: 36 ms, faster than 95.54% of Python3 online submissions
+# Memory Usage: 12.6 MB, less than 100.00% of Python3 online submissions
 
 
 class Solution:
