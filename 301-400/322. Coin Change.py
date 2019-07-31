@@ -1,31 +1,39 @@
+# Runtime: 1288 ms, faster than 67.29% of Python3 online submissions
+# Memory Usage: 13.9 MB, less than 20.46% of Python3 online submissions
+
+
 class Solution:
+    # DP
     def coinChange(self, coins: list, amount: int) -> int:
+        coins.sort()
+        dp = [0] + [amount + 1] * amount
+        for i in range(1, amount + 1):
+            for coin in coins:
+                if i < coin:
+                    break
+                dp[i] = min(dp[i], dp[i - coin] + 1)
+        if dp[-1] == amount + 1:
+            return -1
+        return dp[-1]
+
+    # BFS but TLE
+    def coinChange_(self, coins: list, amount: int) -> int:
         if amount == 0:
             return 0
-        if not coins:
-            return -1
+        if amount in coins:
+            return 1
         coins.sort()
-        combinations = []
-        used_coins = [len(coins) - 1]
-        used_amount = coins[-1]
-        while True:
-            if used_amount < amount:
-                used_coins.append(used_coins[-1])
-                used_amount += coins[used_coins[-1]]
-            else:
-                if used_amount == amount:
-                    combinations.append(len(used_coins))
-                pop_coin = used_coins.pop()
-                used_amount -= coins[pop_coin]
-                while pop_coin == 0:
-                    if not used_coins:
-                        break
-                    pop_coin = used_coins.pop()
-                    used_amount -= coins[pop_coin]
-                if not used_coins:
-                    break
-                used_coins.append(pop_coin - 1)
-                used_amount += coins[pop_coin - 1]
-        if not combinations:
-            return -1
-        return min(combinations)
+        dep = 1
+        current = [(x, coins[x]) for x in range(len(coins))]  # (index, sum)
+        while current:
+            dep += 1
+            next_ = list()
+            for node in current:
+                for i in range(node[0] + 1):
+                    sum_ = node[1] + coins[i]
+                    if sum_ == amount:
+                        return dep
+                    if sum_ < amount:
+                        next_.append((i, sum_))
+            current = next_
+        return -1
